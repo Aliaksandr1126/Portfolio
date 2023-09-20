@@ -1,0 +1,97 @@
+// main: ../style.less
+
+.timeline {display: flex;
+    margin: 4.2rem auto;
+    widows: 100%;
+    max-width: 51.2rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: @black;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+
+    &--left {
+        padding-right: 3.2rem;
+    }
+
+    &--right {
+        padding-left: 3.2rem;
+    }
+}
+
+.timeline__title {
+    margin-bottom: 2.53rem;
+    font-size: 1.2rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.timeline__item {
+    color: @black;
+    margin-bottom: 2.53rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline__date {
+    display: block;
+    text-decoration: underline;
+    font-size: 0.93rem;
+    margin-bottom: 0.8rem;
+}
+
+.timeline__date span {
+    font-weight: 700;
+}
+
+.timeline__subdate {
+    font-size: 1.06rem;
+    font-weight: 700;
+}
+
+.timeline__position {
+    margin-top: .2rem;
+    font-size: 0.93rem;
+    font-style: italic;
+}
+
+
+
+.timeline__text {
+    margin-top: 0.53rem;
+
+    font-size: .8rem;
+    color: @gray;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.timeline__title--awards {
+    margin-bottom: 2rem;
+}
+
+.timeline__item--interface {
+    display: flex;
+}
+
+.timeline__subtitle--right {
+    margin-left: 1.2rem;
+}
+
+
